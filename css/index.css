@@ -17,3 +17,18 @@
   --button-yellow: #FEBC2F;
   --button-red: #FF5F57;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
