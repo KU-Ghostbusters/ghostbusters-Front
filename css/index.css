@@ -1,0 +1,19 @@
+:root {
+  --main-blue: #4F6688;
+  --main-red: #904255;
+  --main-purple: #C2B4D6;
+  --gray1: #999999;
+  --gray2: #D9D9D9;
+  --gray3: #F4F4F4;
+  --red1: #B0546A;
+  --red2: #C07789;
+  --red3: #D09AA7;
+  --red4: #E0BDC5;
+  --blue1: #3C4D67;
+  --blue2: #8499B8;
+  --purple1: #DCD4E8;
+  --purple2: #EAE5F1;
+  --button-green: #28C83F;
+  --button-yellow: #FEBC2F;
+  --button-red: #FF5F57;
+}
