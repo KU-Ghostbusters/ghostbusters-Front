@@ -10,3 +10,133 @@ main .inner .title-container {
   padding-top: 1rem;
   /* 필요 없으면 지워도 됨 */
 }
+
+.description-tab .close-tab .red,
+.yellow,
+.green {
+  border: 1.5px solid var(--blue2);
+}
+
+.description-tab .upper-tab {
+  background-color: transparent;
+  color: black;
+  padding-top: 0.5rem;
+}
+
+.main-tab .name-container {
+  padding: 4rem 0 0 1rem;
+  width: 100%;
+}
+
+.main-tab .name-container .number {
+  font-family: "locus_sangsang";
+}
+
+.name-container .tags {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.name-container .tags .tag {
+  font-family: "locus_sangsang";
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  line-height: 1.7rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.mbti {
+  background-color: var(--red1);
+}
+.major {
+  background-color: var(--blue2);
+}
+.major2 {
+  background-color: var(--purple1);
+}
+
+.traits {
+  width: 100%;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.gender-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+.trait-font {
+  font-family: "locus_sangsang";
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.gender-container img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.power-container,
+.skill-container {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+.power-stat {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.power-stat .logo {
+  margin: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.comment {
+  padding: 0 2rem;
+  line-height: 130%;
+  width: 100%;
+}
+
+.contents-container .description-tab {
+  width: 20vw;
+}
+
+.member-jjh {
+  border: 0.7rem solid var(--blue2);
+}
+
+.member-jjh,
+.member-wdh,
+.member-yjs {
+  position: relative;
+}
+
+.jjh-img,
+.wdh-img,
+.yjs-img {
+  position: absolute;
+  left: 7vw;
+  top: -6.5vh;
+}
+
+.member-img img {
+  width: 6vw;
+  height: 6vw;
+}
+
+.member-wdh {
+  border: 0.7rem solid var(--purple1);
+}
+
+.member-yjs {
+  border: 0.7rem solid var(--red3);
+}

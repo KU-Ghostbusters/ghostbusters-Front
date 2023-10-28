@@ -72,8 +72,8 @@ main .contents-container .book {
 .description-tab .close-tab .red,
 .yellow,
 .green {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
 }
 
