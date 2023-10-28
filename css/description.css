@@ -16,6 +16,14 @@ main .inner .title-container {
   font-size: large;
 }
 
+main .title-container h1 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 66.667% */
+  letter-spacing: -2.7px;
+}
+
 .inner .title-container .description-logo {
   width: 7rem;
   height: 7rem;

@@ -1,0 +1,12 @@
+main .inner .title-container h1 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 80% */
+  letter-spacing: -2.25px;
+}
+
+main .inner .title-container {
+  padding-top: 1rem;
+  /* 필요 없으면 지워도 됨 */
+}
