@@ -1,0 +1,104 @@
+:root {
+  --main-blue: #4f6688;
+  --main-red: #904255;
+  --main-purple: #c2b4d6;
+  --gray1: #999999;
+  --gray2: #d9d9d9;
+  --gray3: #f4f4f4;
+  --red1: #b0546a;
+  --red2: #c07789;
+  --red3: #d09aa7;
+  --red4: #e0bdc5;
+  --blue1: #3c4d67;
+  --blue2: #8499b8;
+  --purple1: #dcd4e8;
+  --purple2: #eae5f1;
+  --button-green: #28c83f;
+  --button-yellow: #febc2f;
+  --button-red: #ff5f57;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GeekbleMalang2";
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header-container,
+.menu-container,
+.title,
+.description,
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.menu-container {
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  gap: 0.5rem;
+}
+
+.description {
+  font-size: 2rem;
+  gap: 0.5rem;
+}
+
+.team {
+  font-size: 1.6rem;
+  gap: 0.7rem;
+  line-height: 1;
+}
+
+.logo {
+  /* 임시방편으로 logo라는 클래스에 공통적으로 네모 적용 */
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--main-blue);
+}
+
+@font-face {
+  font-family: "GeekbleMalang2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/GeekbleMalang2WOFF2.woff2") format("woff2"),
+    url("../font/GeekbleMalang2WOFF.woff") format("woff");
+}
+
+body {
+  background-color: white;
+  background-image: linear-gradient(#a5b4cb 1.2px, transparent 1.2px),
+    linear-gradient(90deg, #a5b4cb 1.2px, transparent 1.2px);
+  background-position: -1.2px -1.2px;
+  background-size: 20px 20px;
+}
