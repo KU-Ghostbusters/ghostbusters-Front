@@ -1,0 +1,115 @@
+main .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 5rem;
+  height: 100vh;
+}
+
+main .inner .title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 5rem 0 5rem;
+  font-size: large;
+}
+
+.inner .title-container .description-logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+main .inner .contents-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.description-tab {
+  border: 0.7rem solid var(--gray1);
+  border-radius: 2rem;
+  background-color: white;
+  height: 40rem;
+}
+
+.description-tab .upper-tab {
+  background-color: var(--gray1);
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.tab-name {
+  font-family: "locus_sangsang";
+  font-size: small;
+}
+
+.description-tab .close-tab {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+main .contents-container .author {
+  width: 22vw;
+}
+
+main .contents-container .book {
+  width: 38vw;
+}
+
+.description-tab .close-tab .red,
+.yellow,
+.green {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.description-tab .close-tab .red {
+  background-color: var(--button-red);
+}
+
+.description-tab .close-tab .yellow {
+  background-color: var(--button-yellow);
+}
+
+.description-tab .close-tab .green {
+  background-color: var(--button-green);
+}
+
+.description-tab .main-tab {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.description-tab .name {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: x-large;
+}
+
+.description-tab .name .chinese {
+  font-size: large;
+}
+
+.description-tab .logo {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.descript-content {
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: "locus_sangsang";
+}

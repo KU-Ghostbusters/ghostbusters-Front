@@ -81,18 +81,29 @@ header {
 }
 
 .logo {
-  /* 임시방편으로 logo라는 클래스에 공통적으로 네모 적용 */
+  /* 임시방편으로 logo라는 클래스에 공통적으로 원 적용 */
   width: 2.5rem;
   height: 2.5rem;
   background-color: var(--main-blue);
+  border-radius: 50%;
 }
 
 @font-face {
   font-family: "GeekbleMalang2";
-  font-style: normal;
-  font-weight: 400;
   src: url("../font/GeekbleMalang2WOFF2.woff2") format("woff2"),
     url("../font/GeekbleMalang2WOFF.woff") format("woff");
+}
+
+@font-face {
+  font-family: "locus_sangsang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.chinese {
+  font-family: "TaiwanPearl";
 }
 
 body {
