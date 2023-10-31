@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+  <>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>요괴지도</title>
+    <title>요괴지도 온보딩</title>
 
     <!-- 메타 태그 설정, 저자, 키워드, 설명 -->
     <meta name="author" content="Ghostbusters" />
@@ -17,13 +17,14 @@
       content="요재지이, 중국고전, 요괴지도, 도감, 요괴, 귀신, 인문팔경, 북적북적"
     />
 
-    <!-- 파비콘 언제든 변경 가능! 다만 변경하면 교체작업 -->
+    <!-- 파비콘 -->
     <link rel="icon" href="./img/tiger.png" />
     <!-- 아이폰 파비콘 -->
     <link rel="apple-touch-icon" href="./img/tiger.png" />
 
     <!-- css -->
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/onboarding.css" />
   </head>
   <body>
     <header>
@@ -50,5 +51,32 @@
         <!-- header-container -->
       </div>
     </header>
+
+    <main>
+      <div id="onboarding-content" class="inner">
+        <div class="textbox">
+          <div class="text">
+            <p>요재지이? 그게 뭐야?</p>
+            <br />
+            <p>옛날 옛적에 포송령이라는 사람이 살았는데 이 편지는 영국에서 최초로 시작되어 일년에 한바퀴를 돌면서 받는 사람에게 행운을 주었고 지금은 당신에게로 옮겨진 이 편지는 4일 안에 당신 곁을 떠나야 합니다. 이 편지를 포함해서 7통을 행운이 필요한 사람에게 보내 주셔야 합니다. 복사를 해도 좋습니다. 혹 미신이라 하실지 모르지만 사실</p>
+            <p>.....더보기</p>
+            </div>
+        </div>
+      </div>
+      <script>
+        // 온보딩 페이지가 표시될 시간 (밀리초)
+        const onboardingDuration = 5000; // 5초로 설정
+        // 온보딩 페이지를 숨기고 다른 페이지로 이동하는 함수
+        function hideOnboarding() {
+          const onboardingContent = document.getElementById("onboarding-content");
+          onboardingContent.style.display = "none";
+
+          // 홈페이지로 이동
+          window.location.href = "./home.html";
+        }
+        // 지정된 온보딩 시간 이후에 hideOnboarding 함수 호출
+        setTimeout(hideOnboarding, onboardingDuration);
+      </script>
+    </main>
   </body>
 </html>
