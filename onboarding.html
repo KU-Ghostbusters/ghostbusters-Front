@@ -53,7 +53,7 @@
     </header>
 
     <main>
-      <div class="inner">
+      <div id="onboarding-content" class="inner">
         <div class="textbox">
           <div class="text">
             <p>요재지이? 그게 뭐야?</p>
@@ -63,6 +63,20 @@
             </div>
         </div>
       </div>
+      <script>
+        // 온보딩 페이지가 표시될 시간 (밀리초)
+        const onboardingDuration = 5000; // 5초로 설정
+        // 온보딩 페이지를 숨기고 다른 페이지로 이동하는 함수
+        function hideOnboarding() {
+          const onboardingContent = document.getElementById("onboarding-content");
+          onboardingContent.style.display = "none";
+
+          // 홈페이지로 이동
+          window.location.href = "./home.html";
+        }
+        // 지정된 온보딩 시간 이후에 hideOnboarding 함수 호출
+        setTimeout(hideOnboarding, onboardingDuration);
+      </script>
     </main>
   </body>
 </html>
