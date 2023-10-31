@@ -1,0 +1,11 @@
+main .china-map {
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+}
