@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -28,28 +28,26 @@
   </head>
   <body>
     <header>
-      <div class="inner">
-        <div class="header-container">
-          <div class="title">
-            <div class="title-logo logo"></div>
-            <a href="./home.html">요괴지도</a>
-          </div>
-          <!-- title -->
-
-          <div class="menu-container">
-            <div class="description">
-              <div class="description-logo logo"></div>
-              <a href="./description.html">요재지이란?</a>
-            </div>
-            <div class="team">
-              <div class="team-logo logo"></div>
-              <a href="./team-members.html">Ghost<br />busters</a>
-            </div>
-          </div>
-          <!-- menu-container -->
+      <div class="header-container">
+        <div class="header-title">
+          <div class="title-logo logo"></div>
+          <a href="./home.html">요괴지도</a>
         </div>
-        <!-- header-container -->
+        <!-- title -->
+
+        <div class="header-menu">
+          <div class="header-description">
+            <div class="description-logo logo"></div>
+            <a href="./description.html">요재지이란?</a>
+          </div>
+          <div class="header-team">
+            <div class="team-logo logo"></div>
+            <a href="./team-members.html">Ghost<br />busters</a>
+          </div>
+        </div>
+        <!-- menu-container -->
       </div>
+      <!-- header-container -->
     </header>
 
     <main>
@@ -58,9 +56,15 @@
           <div class="text">
             <p>요재지이? 그게 뭐야?</p>
             <br />
-            <p>옛날 옛적에 포송령이라는 사람이 살았는데 이 편지는 영국에서 최초로 시작되어 일년에 한바퀴를 돌면서 받는 사람에게 행운을 주었고 지금은 당신에게로 옮겨진 이 편지는 4일 안에 당신 곁을 떠나야 합니다. 이 편지를 포함해서 7통을 행운이 필요한 사람에게 보내 주셔야 합니다. 복사를 해도 좋습니다. 혹 미신이라 하실지 모르지만 사실</p>
+            <p>
+              옛날 옛적에 포송령이라는 사람이 살았는데 이 편지는 영국에서 최초로
+              시작되어 일년에 한바퀴를 돌면서 받는 사람에게 행운을 주었고 지금은
+              당신에게로 옮겨진 이 편지는 4일 안에 당신 곁을 떠나야 합니다. 이
+              편지를 포함해서 7통을 행운이 필요한 사람에게 보내 주셔야 합니다.
+              복사를 해도 좋습니다. 혹 미신이라 하실지 모르지만 사실
+            </p>
             <p>.....더보기</p>
-            </div>
+          </div>
         </div>
       </div>
       <script>
@@ -68,7 +72,8 @@
         const onboardingDuration = 5000; // 5초로 설정
         // 온보딩 페이지를 숨기고 다른 페이지로 이동하는 함수
         function hideOnboarding() {
-          const onboardingContent = document.getElementById("onboarding-content");
+          const onboardingContent =
+            document.getElementById("onboarding-content");
           onboardingContent.style.display = "none";
 
           // 홈페이지로 이동
