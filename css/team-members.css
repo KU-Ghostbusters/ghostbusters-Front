@@ -1,4 +1,4 @@
-main .inner .title-container h1 {
+main .title-container h1 {
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
@@ -6,7 +6,7 @@ main .inner .title-container h1 {
   letter-spacing: -2.25px;
 }
 
-main .inner .title-container {
+main .title-container {
   padding-top: 1rem;
   /* 필요 없으면 지워도 됨 */
 }

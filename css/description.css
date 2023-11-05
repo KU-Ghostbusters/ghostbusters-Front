@@ -1,123 +1,118 @@
-main .inner {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
-  gap: 5rem;
-  height: 100vh;
+  padding: 128px 136px 53px 88px;
+  gap: 57px;
 }
 
-main .inner .title-container {
+main .title-container {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem 5rem 0 5rem;
-  font-size: large;
+  gap: 30px;
 }
 
 main .title-container h1 {
-  font-size: 4rem;
+  font-size: 60px;
+  font-family: "GeekbleMalang2";
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 66.667% */
+  line-height: 40px;
   letter-spacing: -2.7px;
 }
 
-.inner .title-container .description-logo {
-  width: 7rem;
-  height: 7rem;
+.title-container .description-logo {
+  width: 112px;
+  height: 112px;
 }
 
-main .inner .contents-container {
+.contents-container {
   display: flex;
-  gap: 2rem;
+  gap: 42px;
 }
 
 .description-tab {
-  border: 0.7rem solid var(--gray1);
-  border-radius: 2rem;
+  border: 13px solid var(--gray1, #999);
+  border-radius: 40px;
   background-color: white;
-  height: 40rem;
+  height: 730px;
+}
+.contents-container .author {
+  width: 503px;
+}
+.contents-container .book {
+  width: 1095px;
 }
 
-.description-tab .upper-tab {
+.upper-tab {
   background-color: var(--gray1);
-  border-radius: 1rem 1rem 0 0;
-  padding: 0 1.5rem 0.5rem 1.5rem;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0 25px 15px 15px;
   display: flex;
   justify-content: space-between;
-  color: white;
 }
-
 .tab-name {
   font-family: "locus_sangsang";
-  font-size: small;
+  font-size: 25px;
+  color: white;
 }
 
 .description-tab .close-tab {
   display: flex;
-  gap: 3px;
+  gap: 10px;
   align-items: center;
 }
-
-main .contents-container .author {
-  width: 22vw;
-}
-
-main .contents-container .book {
-  width: 38vw;
-}
-
 .description-tab .close-tab .red,
 .yellow,
 .green {
-  width: 7px;
-  height: 7px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
 }
-
-.description-tab .close-tab .red {
+.close-tab .red {
   background-color: var(--button-red);
 }
-
-.description-tab .close-tab .yellow {
+.close-tab .yellow {
   background-color: var(--button-yellow);
 }
-
-.description-tab .close-tab .green {
+.close-tab .green {
   background-color: var(--button-green);
 }
 
-.description-tab .main-tab {
+.main-tab {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 33px;
+  padding: 29px 60px 0 60px;
 }
 
 .description-tab .name {
+  font-family: "GeekbleMalang2";
   display: flex;
   align-items: baseline;
-  gap: 1rem;
-  font-size: x-large;
+  gap: 14px;
+  font-size: 40px;
 }
-
+.name p {
+  margin: 0;
+}
 .description-tab .name .chinese {
-  font-size: large;
+  font-family: "TaiwanPearl";
+  font-size: 30px;
 }
 
 .description-tab .logo {
-  width: 7rem;
-  height: 7rem;
-  margin-bottom: 2rem;
-  margin-top: 3rem;
+  width: 160px;
+  height: 160px;
+  border-radius: 0px;
 }
 
 .descript-content {
-  font-size: 1.5rem;
-  font-weight: 100;
+  text-align: center;
   font-family: "locus_sangsang";
+  font-size: 30px;
+  line-height: 29px;
 }
