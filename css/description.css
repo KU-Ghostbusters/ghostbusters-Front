@@ -107,7 +107,7 @@ main .title-container h1 {
 .description-tab .logo {
   width: 160px;
   height: 160px;
-  border-radius: 0px;
+  border-radius: 50%;
 }
 
 .descript-content {
