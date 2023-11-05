@@ -18,21 +18,16 @@
   --button-red: #ff5f57;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "GeekbleMalang2";
-}
-
-html {
-  font-size: 10px;
-}
-
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: white;
+  background-image: linear-gradient(#a5b4cb 1.2px, transparent 1.2px),
+    linear-gradient(90deg, #a5b4cb 1.2px, transparent 1.2px);
+  background-position: -1.2px -1.2px;
+  background-size: 20px 20px;
+  margin: 0;
 }
 
 a {
@@ -41,49 +36,49 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "GeekbleMalang2";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 88px;
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.header-container,
-.menu-container,
-.title,
-.description,
-.team {
+header div {
   display: flex;
   align-items: center;
 }
 
 .header-container {
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 20px 86px 24px 29px;
 }
 
-.menu-container {
-  gap: 3rem;
-  padding: 0 2rem;
+.header-menu {
+  gap: 51px;
 }
 
-.title {
-  font-size: 2.4rem;
-  gap: 0.5rem;
+.header-title,
+.header-description {
+  font-size: 40px;
+  gap: 7px;
 }
 
-.description {
-  font-size: 2rem;
-  gap: 0.5rem;
-}
-
-.team {
-  font-size: 1.6rem;
-  gap: 0.7rem;
-  line-height: 1;
+.header-team {
+  font-size: 25px;
+  gap: 9px;
+  line-height: 22px;
 }
 
 .logo {
-  /* 임시방편으로 logo라는 클래스에 공통적으로 원 적용 */
-  width: 2.5rem;
-  height: 2.5rem;
+  /* 로고 추가해야 됨 */
+  width: 52px;
+  height: 49px;
   background-color: var(--main-blue);
   border-radius: 50%;
 }
@@ -103,13 +98,6 @@ header {
 }
 
 .chinese {
+  /* 중국어 폰트 */
   font-family: "TaiwanPearl";
-}
-
-body {
-  background-color: white;
-  background-image: linear-gradient(#a5b4cb 1.2px, transparent 1.2px),
-    linear-gradient(90deg, #a5b4cb 1.2px, transparent 1.2px);
-  background-position: -1.2px -1.2px;
-  background-size: 20px 20px;
 }
