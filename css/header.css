@@ -100,4 +100,5 @@ header div {
 .chinese {
   /* 중국어 폰트 */
   font-family: "TaiwanPearl";
+  src: url(../font/TaiwanPearl-Medium.ttf) format("truetype");
 }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>팝업창은 지도 html에 넣을 생각이에요</title>
+    <link rel="stylesheet" href="./css/region-pop.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <div class="region-pop">
+      <div class="region-upper-tab">
+        <input id="exit-button" type="checkbox" />
+        <label for="exit-button"><div class="red"></div></label>
+        <div class="yellow"></div>
+        <div class="green"></div>
+      </div>
+      <!-- region-upper-tab -->
+      <div class="region-title">
+        산둥성
+        <div class="chinese">山東省</div>
+      </div>
+      <!-- region-title -->
+      <div class="found-monsters">
+        <div class="found-title">발견한 요괴</div>
+        <div class="monster-container">
+          <input id="check-btn-fox" type="checkbox" />
+          <label for="check-btn-fox" class="check-label">
+            <div class="monster-category fox-category">
+              <div class="circle"></div>
+              <div class="monster-type">여우 요괴</div>
+              <div class="monster-number">5</div>
+              <div class="arrow"></div>
+            </div>
+          </label>
+          <div class="fox-list monster-list">
+            <div class="item fox-type">여우 1마리</div>
+            <div class="item fox-type">여우 2마리</div>
+            <div class="item fox-type">여우 3마리</div>
+            <div class="item fox-type">여우 4마리</div>
+            <div class="item fox-type">여우 5마리</div>
+          </div>
+        </div>
+        <!-- monster-container sample 1 -->
+        <div class="monster-container">
+          <input id="check-btn-tiger" type="checkbox" />
+          <label for="check-btn-tiger" class="check-label">
+            <div class="monster-category tiger tiger-category">
+              <div class="circle"></div>
+              <div class="monster-type">호랑이 요괴</div>
+              <div class="monster-number">3</div>
+              <div class="arrow"></div>
+            </div>
+          </label>
+          <div class="tiger-list monster-list">
+            <div class="item tiger-type">아빠 호랑이</div>
+            <div class="item tiger-type">엄마 호랑이</div>
+            <div class="item tiger-type">아기 호랑이</div>
+          </div>
+        </div>
+        <!-- monster-container sample 2 -->
+        <div class="monster-container">
+          <input id="check-btn-1" type="checkbox" />
+          <label for="check-btn-1" class="check-label">
+            <div class="monster-category tiger tiger-category">
+              <div class="circle"></div>
+              <div class="monster-type">예시 요괴</div>
+              <div class="monster-number">3</div>
+              <div class="arrow"></div>
+            </div>
+          </label>
+          <div class="mo-list monster-list">
+            <div class="item tiger-type">아빠 호랑이</div>
+            <div class="item tiger-type">엄마 호랑이</div>
+            <div class="item tiger-type">아기 호랑이</div>
+          </div>
+        </div>
+        <!-- monster-container sample 2 -->
+      </div>
+      <!-- found-monsters -->
+    </div>
+    <!-- region-pop -->
+    <script>
+      const $exitButton = document.getElementById("exit-button");
+      const $regionPop = document.querySelector(".region-pop");
+
+      $exitButton.addEventListener("click", function () {
+        $regionPop.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
