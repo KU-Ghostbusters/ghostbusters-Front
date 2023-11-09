@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>팝업창 지도 html에</title>
+
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/region-pop.css" />
+    <link rel="stylesheet" href="./css/monster-pop.css" />
+  </head>
+
+  <body>
+    <div class="monster-pop">
+      <div class="monster-upper-tab">
+        <input id="mon-exit-button" type="checkbox" />
+        <label for="mon-exit-button"><div class="red"></div></label>
+        <div class="yellow"></div>
+        <div class="green"></div>
+      </div>
+      <!-- monster-upper-tab -->
+      <div class="monster-title">
+        요괴 이름
+        <div class="chinese">名字</div>
+      </div>
+      <!-- monster-title -->
+      <div class="tags">
+        <div class="tag mon-type1">귀신</div>
+        <div class="tag mon-type2">여우</div>
+      </div>
+      <!-- tags -->
+
+      <div class="traits trait-font">
+        <div class="gender-container">
+          <div class="gender">성별:</div>
+          <img src="./img/Gender_Men.svg" alt="men" id="men" />
+          <img src="./img/Gender_Women.svg" alt="women" id="women" />
+        </div>
+        <!-- gender-container -->
+        <div class="location-container">
+          <div class="location">출몰 지역:</div>
+          <div class="mon-location">광둥성 광저우</div>
+        </div>
+        <!-- location-container -->
+        <div class="character-container">
+          <div class="character">특징:</div>
+          <div class="mon-character">눈이 큼, 흰 꼬리 아홉 개를 달고 있음</div>
+        </div>
+        <!-- character-container -->
+      </div>
+      <!-- traits -->
+      <div class="story-container trait-font">
+        <div class="story">스토리:</div>
+        <div class="mon-story">
+          여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔
+          요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속
+          요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨
+          일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨 일을 했는지
+          작성할거예요. 여기엔 요재지이 속 요괴가 무슨 일을 했는지
+          작성할거예요.여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요.
+          여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔
+          요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속
+          요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨
+          일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨 일을 했는지
+          작성할거예요.여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요.
+          여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔
+          요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속
+          요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨
+          일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨 일을 했는지
+          작성할거예요.여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요.
+          여기엔 요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔
+          요재지이 속 요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속
+          요괴가 무슨 일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨
+          일을 했는지 작성할거예요. 여기엔 요재지이 속 요괴가 무슨 일을 했는지
+          작성할거예요.
+        </div>
+      </div>
+      <!-- story-container -->
+      <div class="monster-img"><img src="./img/tiger.png" alt="tiger" /></div>
+      <!-- monster-img -->
+    </div>
+
+    <!-- monster-pop -->
+    <script>
+      const $monExitButton = document.getElementById("mon-exit-button");
+      const $monsterPop = document.querySelector(".monster-pop");
+
+      $monExitButton.addEventListener("click", function () {
+        $monsterPop.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
