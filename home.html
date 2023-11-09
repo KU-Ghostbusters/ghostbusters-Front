@@ -52,8 +52,60 @@
 
     <main>
       <div class="china-map">
-        <img src="./img/China.png" alt="china-map" />
+        <div class="whole-map">
+          <img src="./img/China.png" alt="china-map" />
+        </div>
+        <div class="china-henan">
+          <img src="./img/henan-default.svg" alt="henan" id="henan" />
+        </div>
+        <div class="china-guangdong">
+          <img src="./img/China-guangdong-default.svg" alt="guangdong" id="guangdong" />
+        </div>
+        <div class="china-shandong">
+          <img src="./img/China-shandong-default.svg" alt="shandong" id="shandong" />
+        </div>
       </div>
+      <script>
+        // 커서 올리면 hover 이미지로 변경
+        document.getElementById('henan').addEventListener('mouseover', function() {
+          let newImageURL = "./img/henan-hover.svg"
+          this.src = newImageURL;
+        });
+        document.getElementById('guangdong').addEventListener('mouseover', function() {
+          let newImageURL = "./img/guangdong-hover.svg"
+          this.src = newImageURL;
+        });
+        document.getElementById('shandong').addEventListener('mouseover', function() {
+          let newImageURL = "./img/shandong-hover.svg"
+          this.src = newImageURL;
+        });
+        // 커서 떼면 default 이미지로 변경 // 1110 현재 브라우저 오류로 실행 안됨
+        document.getElementById('henan').addEventListener('mouseleave', function() {
+          let defaultURL = "./img/henan-default.svg"
+          this.src = newImageURL;
+        });
+        document.getElementById('guangdong').addEventListener('mouseleave', function() {
+          let defaultURL = "./img/guangdong-default.svg"
+          this.src = newImageURL;
+        });
+        document.getElementById('shandong').addEventListener('mouseleave', function() {
+          let defaultURL = "./img/shandong-default.svg"
+          this.src = newImageURL;
+        });
+        // 페이지 이동
+        document.getElementById('henan').addEventListener('click', function() {
+          let destinationURL = "./henan.html"
+          window.location.href = destinationURL;
+        });
+        document.getElementById('guangdong').addEventListener('click', function() {
+          let destinationURL = "./guangdong.html"
+          window.location.href = destinationURL;
+        });
+        document.getElementById('shandong').addEventListener('click', function() {
+          let destinationURL = "./shandong.html"
+          window.location.href = destinationURL;
+        });
+      </script>
     </main>
   </body>
 </html>
