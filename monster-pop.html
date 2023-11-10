@@ -50,6 +50,14 @@
     </div>
 
     <!-- monster-pop -->
-    <script src="./monster-pop.js"></script>
+    <script src="./script/Monster.js"></script>
+    <script>
+      const $monExitButton = document.getElementById("mon-exit-button");
+      const $monsterPop = document.querySelector(".monster-pop");
+
+      $monExitButton.addEventListener("click", function () {
+        $monsterPop.style.display = "none";
+      });
+    </script>
   </body>
 </html>
