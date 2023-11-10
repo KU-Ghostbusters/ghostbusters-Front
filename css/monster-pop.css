@@ -68,13 +68,13 @@ input {
   line-height: 40px;
 }
 
-.tags {
+.tags-container {
   display: flex;
   gap: 10px;
   margin-left: 67px;
   margin-bottom: 26px;
 }
-.tags .tag {
+.tags-container .tag {
   font-family: "locus_sangsang";
   width: 63px;
   height: 36px;
