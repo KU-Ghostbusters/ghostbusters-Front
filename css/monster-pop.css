@@ -51,7 +51,7 @@ input {
   margin: 15px 0 19px 59px;
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 55px;
   color: black;
   font-family: "GeekbleMalang2";
   font-size: 50px;
@@ -68,13 +68,13 @@ input {
   line-height: 40px;
 }
 
-.tags {
+.tags-container {
   display: flex;
   gap: 10px;
   margin-left: 67px;
   margin-bottom: 26px;
 }
-.tags .tag {
+.tags-container .tag {
   font-family: "locus_sangsang";
   width: 63px;
   height: 36px;
@@ -128,17 +128,26 @@ input {
   gap: 10px;
 }
 
+.character-container {
+  align-items: baseline;
+}
+
+.mon-character {
+  max-width: 50%;
+  overflow: auto;
+}
+
 .story-container {
   margin: 20px 80px 20px 60px;
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
-
 .monster-img img {
   max-width: 333px;
   max-height: 333px;
+  object-fit: cover;
   position: absolute;
-  left: 505px;
-  top: 56px;
+  left: 60%;
+  top: 8%;
 }
