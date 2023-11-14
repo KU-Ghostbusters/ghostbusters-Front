@@ -2,10 +2,34 @@ main .china-map {
   display: flex;
   width: 1920px;
   height: 1080px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
 
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
+
+  position: relative;
 }
+
+main .china-henan {
+  position: absolute;
+  z-index: 1;
+  margin-top: 503px;
+  margin-left: 1136px;
+}
+
+main .china-guangdong {
+  position: absolute;
+  z-index: 1;
+  margin-top: 799px;
+  margin-left: 1136px;
+  width: 230px;
+  height: 152px;
+}
+
+main .china-shandong {
+  position: absolute;
+  z-index: 1;
+  margin-top: 467px;
+  margin-left: 1218px;
+}
+

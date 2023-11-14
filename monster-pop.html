@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class를 활용한 도감 팝업</title>
+
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/region-pop.css" />
+    <link rel="stylesheet" href="./css/monster-pop.css" />
+  </head>
+
+  <body>
+    <div class="monster-pop">
+      <div class="monster-upper-tab">
+        <input id="mon-exit-button" type="checkbox" />
+        <label for="mon-exit-button"><div class="red"></div></label>
+        <div class="yellow"></div>
+        <div class="green"></div>
+      </div>
+      <!-- monster-upper-tab -->
+      <div class="monster-title"></div>
+      <!-- monster-title -->
+      <div class="tags-container"></div>
+      <!-- tags-container -->
+
+      <div class="traits trait-font">
+        <div class="gender-container">
+          <div class="gender">성별:</div>
+          <img src="./img/Gender_Men.svg" alt="men" id="men" />
+          <img src="./img/Gender_Women.svg" alt="women" id="women" />
+        </div>
+        <!-- gender-container -->
+        <div class="location-container">
+          <div class="location">출몰 지역:</div>
+        </div>
+        <!-- location-container -->
+        <div class="character-container">
+          <div class="character">특징:</div>
+        </div>
+        <!-- character-container -->
+      </div>
+      <!-- traits -->
+      <div class="story-container trait-font">
+        <div class="story">스토리:</div>
+      </div>
+      <!-- story-container -->
+      <div class="monster-img"></div>
+      <!-- monster-img -->
+    </div>
+
+    <!-- monster-pop -->
+    <script src="./script/Monster.js"></script>
+    <script>
+      const $monExitButton = document.getElementById("mon-exit-button");
+      const $monsterPop = document.querySelector(".monster-pop");
+
+      $monExitButton.addEventListener("click", function () {
+        $monsterPop.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
