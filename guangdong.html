@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>광둥성 페이지</title>
+
+    <!-- 메타 태그 설정, 저자, 키워드, 설명 -->
+    <meta name="author" content="Ghostbusters" />
+    <meta
+      name="description"
+      content="중국 고전소설 ≪요재지이≫를 바탕으로 만들어낸 요괴지도!"
+    />
+    <meta
+      name="keywords"
+      content="요재지이, 중국고전, 요괴지도, 도감, 요괴, 귀신, 인문팔경, 북적북적"
+    />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./img/tiger.png" />
+    <!-- 아이폰 파비콘 -->
+    <link rel="apple-touch-icon" href="./img/tiger.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/guangdong.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-title">
+          <div class="title-logo logo"></div>
+          <a href="./home.html">요괴지도</a>
+        </div>
+        <!-- title -->
+
+        <div class="header-menu">
+          <div class="header-description">
+            <div class="description-logo logo"></div>
+            <a href="./description.html">요재지이란?</a>
+          </div>
+          <div class="header-team">
+            <div class="team-logo logo"></div>
+            <a href="./team-members.html">Ghost<br />busters</a>
+          </div>
+        </div>
+        <!-- menu-container -->
+      </div>
+      <!-- header-container -->
+    </header>
+
+    <main>
+      <div class="china-map">
+        <div class="whole-map">
+          <img src="./img/China.png" alt="china-map" />
+        </div>
+        <div class="china-guangdong">
+          <img src="./img/China-guangdong-hover.svg" alt="guangdong" id="guangdong" />
+        </div>
+      </div>
+      <!-- map container-->
+      <div class="region-pop">
+        <div class="region-upper-tab">
+          <input id="exit-button" type="checkbox" />
+          <label for="exit-button"><div class="red"></div></label>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <!-- region-upper-tab -->
+        <div class="region-title">
+          산둥성
+          <div class="chinese">山東省</div>
+        </div>
+        <!-- region-title -->
+        <div class="found-monsters">
+          <div class="found-title">발견한 요괴</div>
+          <div class="monster-container">
+            <input id="check-btn-fox" type="checkbox" />
+            <label for="check-btn-fox" class="check-label">
+              <div class="monster-category fox-category">
+                <div class="circle"></div>
+                <div class="monster-type">여우 요괴</div>
+                <div class="monster-number">2</div>
+                <div class="arrow"></div>
+              </div>
+            </label>
+            <div class="fox-list monster-list">
+              <div class="item fox-type">교낭</div>
+              <div class="item fox-type">구산왕</div>
+            </div>
+          </div>
+          <!-- monster-container sample 1 -->
+          <div class="monster-container">
+            <input id="check-btn-tiger" type="checkbox" />
+            <label for="check-btn-tiger" class="check-label">
+              <div class="monster-category tiger tiger-category">
+                <div class="circle"></div>
+                <div class="monster-type">서생 요괴</div>
+                <div class="monster-number">1</div>
+                <div class="arrow"></div>
+              </div>
+            </label>
+            <div class="tiger-list monster-list">
+              <div class="item tiger-type">곽 수재</div>
+            </div>
+          </div>
+        </div>
+        <!-- found-monsters -->
+      </div>
+      <!-- region-pop -->
+      <div class="monster-pop">
+        <div class="monster-upper-tab">
+          <input id="mon-exit-button" type="checkbox" />
+          <label for="mon-exit-button"><div class="red"></div></label>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <!-- monster-upper-tab -->
+        <div class="monster-title"></div>
+        <!-- monster-title -->
+        <div class="tags-container"></div>
+        <!-- tags-container -->
+  
+        <div class="traits trait-font">
+          <div class="gender-container">
+            <div class="gender">성별:</div>
+            <img src="./img/Gender_Men.svg" alt="men" id="men" />
+            <img src="./img/Gender_Women.svg" alt="women" id="women" />
+          </div>
+          <!-- gender-container -->
+          <div class="location-container">
+            <div class="location">출몰 지역:</div>
+          </div>
+          <!-- location-container -->
+          <div class="character-container">
+            <div class="character">특징:</div>
+          </div>
+          <!-- character-container -->
+        </div>
+        <!-- traits -->
+        <div class="story-container trait-font">
+          <div class="story">스토리:</div>
+        </div>
+        <!-- story-container -->
+        <div class="monster-img"></div>
+        <!-- monster-img -->
+      </div>
+  
+      <!-- monster-pop -->
+      <script src="./script/Monster.js"></script>
+      <script>
+      const $exitButton = document.getElementById("exit-button");
+      const $regionPop = document.querySelector(".region-pop");
+
+      $exitButton.addEventListener("click", function () {
+        $regionPop.style.display = "none";
+      });
+
+      const $monExitButton = document.getElementById("mon-exit-button");
+      const $monsterPop = document.querySelector(".monster-pop");
+
+      $monExitButton.addEventListener("click", function () {
+        $monsterPop.style.display = "none";
+      });
+      </script>
+    </main>
+  </body>
+</html>
