@@ -88,7 +88,16 @@ main .title-container h1 {
   gap: 33px;
   padding: 29px 60px 0 60px;
 }
-
+#authorImg {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+#bookImg {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+}
 .description-tab .name {
   font-family: "GeekbleMalang2";
   display: flex;
@@ -104,15 +113,13 @@ main .title-container h1 {
   font-size: 30px;
 }
 
-.description-tab .logo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-}
-
 .descript-content {
   text-align: center;
   font-family: "locus_sangsang";
   font-size: 30px;
   line-height: 29px;
+}
+
+.author-description {
+  font-size: 25px;
 }

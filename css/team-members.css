@@ -1,3 +1,7 @@
+div {
+  box-sizing: border-box;
+}
+
 main {
   padding-top: 107px;
   padding-right: 126px;
@@ -23,7 +27,7 @@ main {
   height: 730px;
   width: 503px;
   gap: 40px;
-  padding: 0 0 0 45px;
+  padding: 0 45px 0 45px;
 }
 
 .main-tab .name-container {
@@ -66,7 +70,7 @@ main {
 
 .traits {
   width: 100%;
-  padding: 0 0 32px 32px;
+  padding-left: 32px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -108,8 +112,7 @@ main {
 
 .comment {
   width: 95%;
-  padding: 0 32px;
-  font-size: 35px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
 }
