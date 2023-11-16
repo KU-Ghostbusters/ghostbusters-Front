@@ -125,7 +125,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40vh;
+    padding-top: 10vh;
   }
   footer img {
     width: 60vw;
