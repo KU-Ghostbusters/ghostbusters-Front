@@ -24,7 +24,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/henan.css">
+    <link rel="stylesheet" href="./css/henan.css" />
   </head>
   <body>
     <header>
@@ -134,7 +134,7 @@
         <!-- monster-title -->
         <div class="tags-container"></div>
         <!-- tags-container -->
-  
+
         <div class="traits trait-font">
           <div class="gender-container">
             <div class="gender">성별:</div>
@@ -159,24 +159,31 @@
         <div class="monster-img"></div>
         <!-- monster-img -->
       </div>
-  
       <!-- monster-pop -->
       <script src="./script/Monster.js"></script>
       <script>
-      const $exitButton = document.getElementById("exit-button");
-      const $regionPop = document.querySelector(".region-pop");
+        const $exitButton = document.getElementById("exit-button");
+        const $regionPop = document.querySelector(".region-pop");
 
-      $exitButton.addEventListener("click", function () {
-        $regionPop.style.display = "none";
-      });
+        $exitButton.addEventListener("click", function () {
+          $regionPop.style.display = "none";
+        });
 
-      const $monExitButton = document.getElementById("mon-exit-button");
-      const $monsterPop = document.querySelector(".monster-pop");
+        const $monExitButton = document.getElementById("mon-exit-button");
+        const $monsterPop = document.querySelector(".monster-pop");
 
-      $monExitButton.addEventListener("click", function () {
-        $monsterPop.style.display = "none";
-      });
+        $monExitButton.addEventListener("click", function () {
+          $monsterPop.style.display = "none";
+        });
       </script>
     </main>
+    <footer>
+      <img src="./img/ghostwithbread.png" alt="ghost" />
+      <div class="footer-text">
+        <h1>PC로 접속해주세요!</h1>
+        <p>요괴지도를 넓은 화면에서 즐겨보세요!</p>
+      </div>
+    </footer>
+    <!-- mobile-block -->
   </body>
 </html>
