@@ -104,7 +104,7 @@ main {
   gap: 9px;
 }
 
-.power-stat .logo {
+.power-stat img {
   margin: 0;
   width: 30px;
   height: 30px;
@@ -127,7 +127,7 @@ main {
 .wdh-img,
 .yjs-img {
   position: absolute;
-  left: 192px; /*최대한 가운데로 보이는 px값...*/
+  left: 168px; /*최대한 가운데로 보이는 px값...*/
   top: -75px;
 }
 
