@@ -9,7 +9,11 @@ main .inner .textbox {
 
   margin: 0 auto;
   position: relative;
-  top: 400px;
+  top: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .inner .text {

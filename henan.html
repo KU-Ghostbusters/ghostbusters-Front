@@ -25,6 +25,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/henan.css" />
+    <link rel="stylesheet" href="./css/monster-pop.css" />
   </head>
   <body>
     <header>
@@ -76,46 +77,46 @@
         <div class="found-monsters">
           <div class="found-title">발견한 요괴</div>
           <div class="monster-container">
-            <input id="check-btn-fox" type="checkbox" />
-            <label for="check-btn-fox" class="check-label">
-              <div class="monster-category fox-category">
+            <input id="check-btn-1" type="checkbox" />
+            <label for="check-btn-1" class="check-label">
+              <div class="monster-category">
                 <div class="circle"></div>
                 <div class="monster-type">남자 귀신 요괴</div>
                 <div class="monster-number">1</div>
                 <div class="arrow"></div>
               </div>
             </label>
-            <div class="fox-list monster-list">
-              <div class="item fox-type">성선</div>
+            <div class="first-list monster-list">
+              <div class="item" id="SinSeon">성선</div>
             </div>
           </div>
           <!-- monster-container sample 1 -->
           <div class="monster-container">
-            <input id="check-btn-tiger" type="checkbox" />
-            <label for="check-btn-tiger" class="check-label">
-              <div class="monster-category tiger tiger-category">
+            <input id="check-btn-2" type="checkbox" />
+            <label for="check-btn-2" class="check-label">
+              <div class="monster-category">
                 <div class="circle"></div>
                 <div class="monster-type">기타 동물 요괴</div>
                 <div class="monster-number">1</div>
                 <div class="arrow"></div>
               </div>
             </label>
-            <div class="tiger-list monster-list">
-              <div class="item tiger-type">합이</div>
+            <div class="second-list monster-list">
+              <div class="item" id="Pigeon">합이</div>
             </div>
           </div>
           <div class="monster-container">
-            <input id="check-btn-tiger" type="checkbox" />
-            <label for="check-btn-tiger" class="check-label">
-              <div class="monster-category tiger tiger-category">
+            <input id="check-btn-3" type="checkbox" />
+            <label for="check-btn-3" class="check-label">
+              <div class="monster-category">
                 <div class="circle"></div>
                 <div class="monster-type">노파 요괴</div>
                 <div class="monster-number">1</div>
                 <div class="arrow"></div>
               </div>
             </label>
-            <div class="tiger-list monster-list">
-              <div class="item tiger-type">축옹</div>
+            <div class="third-list monster-list">
+              <div class="item" id="GhostMan">축옹</div>
             </div>
           </div>
         </div>
@@ -167,6 +168,8 @@
 
         $exitButton.addEventListener("click", function () {
           $regionPop.style.display = "none";
+          let destinationURL = "./home.html";
+          window.location.href = destinationURL;
         });
 
         const $monExitButton = document.getElementById("mon-exit-button");
