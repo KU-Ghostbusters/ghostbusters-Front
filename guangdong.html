@@ -24,7 +24,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/guangdong.css">
+    <link rel="stylesheet" href="./css/guangdong.css" />
+    <link rel="stylesheet" href="./css/monster-pop.css" />
   </head>
   <body>
     <header>
@@ -56,7 +57,11 @@
           <img src="./img/China.png" alt="china-map" />
         </div>
         <div class="china-guangdong">
-          <img src="./img/China-guangdong-hover.svg" alt="guangdong" id="guangdong" />
+          <img
+            src="./img/China-guangdong-hover.svg"
+            alt="guangdong"
+            id="guangdong"
+          />
         </div>
       </div>
       <!-- map container-->
@@ -76,33 +81,33 @@
         <div class="found-monsters">
           <div class="found-title">발견한 요괴</div>
           <div class="monster-container">
-            <input id="check-btn-fox" type="checkbox" />
-            <label for="check-btn-fox" class="check-label">
-              <div class="monster-category fox-category">
+            <input id="check-btn-1" type="checkbox" />
+            <label for="check-btn-1" class="check-label">
+              <div class="monster-category">
                 <div class="circle"></div>
                 <div class="monster-type">여우 요괴</div>
                 <div class="monster-number">2</div>
                 <div class="arrow"></div>
               </div>
             </label>
-            <div class="fox-list monster-list">
-              <div class="item fox-type">교낭</div>
-              <div class="item fox-type">구산왕</div>
+            <div class="monster-list first-list">
+              <div class="item" id="FoxWoman">교낭</div>
+              <div class="item" id="FoxMan">구산왕</div>
             </div>
           </div>
           <!-- monster-container sample 1 -->
           <div class="monster-container">
-            <input id="check-btn-tiger" type="checkbox" />
-            <label for="check-btn-tiger" class="check-label">
-              <div class="monster-category tiger tiger-category">
+            <input id="check-btn-2" type="checkbox" />
+            <label for="check-btn-2" class="check-label">
+              <div class="monster-category">
                 <div class="circle"></div>
                 <div class="monster-type">서생 요괴</div>
                 <div class="monster-number">1</div>
                 <div class="arrow"></div>
               </div>
             </label>
-            <div class="tiger-list monster-list">
-              <div class="item tiger-type">곽 수재</div>
+            <div class="monster-list second-list">
+              <div class="item" id="SeoSaeng">곽 수재</div>
             </div>
           </div>
         </div>
@@ -121,7 +126,7 @@
         <!-- monster-title -->
         <div class="tags-container"></div>
         <!-- tags-container -->
-  
+
         <div class="traits trait-font">
           <div class="gender-container">
             <div class="gender">성별:</div>
@@ -146,23 +151,24 @@
         <div class="monster-img"></div>
         <!-- monster-img -->
       </div>
-  
       <!-- monster-pop -->
       <script src="./script/Monster.js"></script>
       <script>
-      const $exitButton = document.getElementById("exit-button");
-      const $regionPop = document.querySelector(".region-pop");
+        const $exitButton = document.getElementById("exit-button");
+        const $regionPop = document.querySelector(".region-pop");
 
-      $exitButton.addEventListener("click", function () {
-        $regionPop.style.display = "none";
-      });
+        $exitButton.addEventListener("click", function () {
+          $regionPop.style.display = "none";
+          let destinationURL = "./home.html";
+          window.location.href = destinationURL;
+        });
 
-      const $monExitButton = document.getElementById("mon-exit-button");
-      const $monsterPop = document.querySelector(".monster-pop");
+        const $monExitButton = document.getElementById("mon-exit-button");
+        const $monsterPop = document.querySelector(".monster-pop");
 
-      $monExitButton.addEventListener("click", function () {
-        $monsterPop.style.display = "none";
-      });
+        $monExitButton.addEventListener("click", function () {
+          $monsterPop.style.display = "none";
+        });
       </script>
     </main>
   </body>
