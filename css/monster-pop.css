@@ -2,7 +2,12 @@
   box-sizing: border-box;
 }
 .monster-pop {
+  display: none;
   position: absolute;
+  z-index: 2;
+  top: 160px;
+  left: 800px;
+
   width: 900px;
   height: 750px;
   border-radius: 35px;
@@ -30,8 +35,8 @@ input {
   align-items: center;
 }
 .monster-upper-tab .red,
-.yellow,
-.green {
+.monster-upper-tab .yellow,
+.monster-upper-tab .green {
   width: 21px;
   height: 21px;
   border-radius: 50%;

@@ -45,8 +45,8 @@ class Monster {
     let women = document.getElementById("women");
     let men = document.getElementById("men");
     this.isGender
-      ? (men.style.display = "none")
-      : (women.style.display = "none");
+      ? ((men.style.display = "none"), (women.style.display = "block"))
+      : ((women.style.display = "none"), (men.style.display = "block"));
 
     let locationContainer =
       document.getElementsByClassName("location-container")[0];
@@ -75,6 +75,53 @@ class Monster {
     monImg.setAttribute("alt", "monster-image");
     monsterImg.appendChild(monImg);
   }
+
+  deletePopUp() {
+    let monsterTitle = document.getElementsByClassName("monster-title")[0];
+    while (monsterTitle.firstChild) {
+      monsterTitle.removeChild(monsterTitle.firstChild);
+    }
+
+    let tagsContainer = document.getElementsByClassName("tags-container")[0];
+    while (tagsContainer.firstChild) {
+      tagsContainer.removeChild(tagsContainer.firstChild);
+    }
+
+    let locationContainer =
+      document.getElementsByClassName("location-container")[0];
+    while (locationContainer.childNodes.length >= 3) {
+      locationContainer.removeChild(locationContainer.childNodes[2]);
+    }
+
+    let characterContainer = document.getElementsByClassName(
+      "character-container"
+    )[0];
+    while (characterContainer.childNodes.length >= 3) {
+      characterContainer.removeChild(characterContainer.childNodes[2]);
+    }
+
+    let storyContainer = document.getElementsByClassName("story-container")[0];
+    while (storyContainer.childNodes.length >= 3) {
+      storyContainer.removeChild(storyContainer.childNodes[2]);
+    }
+
+    let monsterImg = document.getElementsByClassName("monster-img")[0];
+    while (monsterImg.firstChild) {
+      monsterImg.removeChild(monsterImg.firstChild);
+    }
+  }
+}
+
+const monsterPop = document.querySelector(".monster-pop");
+const target = document.querySelectorAll(".item");
+
+for (let i = 0; i < target.length; i++) {
+  target[i].addEventListener("click", function () {
+    monsterPop.style.display = "block";
+    let targetID = this.getAttribute("id");
+    new Function(targetID + ".deletePopUp();")();
+    new Function(targetID + ".monPopUp();")();
+  });
 }
 
 const SinSeon = new Monster(
@@ -114,7 +161,7 @@ const Snake = new Monster(
   0,
   "허난성",
   "두 형제 뱀. 화가 나면 사람을 해침.",
-  `동군(东郡)에는 뱀 공연을 직업으로 삼는 한 사람이 있었다. 그는 큰 뱀 대청(大青), 작은 뱀 이청(二青)을 길렀는데, 그 중에서도 이청은 매우 민첩했다. 대청이 죽은 후 그는 대청을 대신할 만한 뱀을 찾지 못했다. 산 사원에서 하룻밤을 묵은 다음 날, 이청도 사라졌다. 공연자는 사방을 뒤졌지만 아무런 흔적도 찾을 수 없었다. 실망하던 중, 그는 풀숲이 바스락거리는 소리에 이청이 작은 뱀을 데리고 돌아온 것을 발견했다. 그는 기쁜 마음으로 작은 뱀에게 소청(小青)이라는 이름을 붙이고 훈련을 시키며 함께 공연을 하여 많은 돈을 벌었다.  
+  `동군에는 뱀 공연을 직업으로 삼는 한 사람이 있었다. 그는 큰 뱀 대청, 작은 뱀 이청을 길렀는데, 그 중에서도 이청은 매우 민첩했다. 대청이 죽은 후 그는 대청을 대신할 만한 뱀을 찾지 못했다. 산 사원에서 하룻밤을 묵은 다음 날, 이청도 사라졌다. 공연자는 사방을 뒤졌지만 아무런 흔적도 찾을 수 없었다. 실망하던 중, 그는 풀숲이 바스락거리는 소리에 이청이 작은 뱀을 데리고 돌아온 것을 발견했다. 그는 기쁜 마음으로 작은 뱀에게 소청이라는 이름을 붙이고 훈련을 시키며 함께 공연을 하여 많은 돈을 벌었다.  
   더 이상 공연을 할 수 없을 정도로 몸집이 커진 이청은 산에서 자라며 사람들을 쫓아다녔다. 마을 사람들 사이에 산에 큰 뱀이 나타나니 조심하라는 소문이 돌고, 아무도 이청이 사는 지역을 지나가지 않았다. 어느 날, 그 지역을 지나가던 공연자가 뱀에게 쫓겼다. 뱀은 그의 몸을 칭칭 옭아맸다. 그때, 공연자는 뱀의 머리에 붉은 점을 보고 이청임을 깨닫고 멈추라고 소리쳤다. 이청은 공연자의 짐보따리를 머리로 쿡쿡 찔렀다. 공연자는 이청이 보따리 속에 담긴 소청을 원한다는 것을 깨닫고 소청을 풀어주며, 사람들을 해치지 말라고는 작별 인사를 하고 떠났다.`,
   "./img/snake.png"
 );
@@ -188,5 +235,3 @@ const Tiger = new Monster(
   이후 형 눌은 동생 성을 찾으러 이승과 저승의 경계로 떠났고, 거기서 성을 다시 만나 원래 살던 곳으로 돌아가 아버지와 행복하게 살았다.`,
   "./img/tiger.png"
 );
-
-Tiger.monPopUp();
