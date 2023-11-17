@@ -60,17 +60,13 @@
         </div>
         <div class="china-guangdong">
           <img
-            src="./img/China-guangdong-default.svg"
+            src="./img/guangdong-default.svg"
             alt="guangdong"
             id="guangdong"
           />
         </div>
         <div class="china-shandong">
-          <img
-            src="./img/China-shandong-default.svg"
-            alt="shandong"
-            id="shandong"
-          />
+          <img src="./img/shandong-default.svg" alt="shandong" id="shandong" />
         </div>
       </div>
       <script>
@@ -98,19 +94,19 @@
           .getElementById("henan")
           .addEventListener("mouseleave", function () {
             let defaultURL = "./img/henan-default.svg";
-            this.src = newImageURL;
+            this.src = defaultURL;
           });
         document
           .getElementById("guangdong")
           .addEventListener("mouseleave", function () {
             let defaultURL = "./img/guangdong-default.svg";
-            this.src = newImageURL;
+            this.src = defaultURL;
           });
         document
           .getElementById("shandong")
           .addEventListener("mouseleave", function () {
             let defaultURL = "./img/shandong-default.svg";
-            this.src = newImageURL;
+            this.src = defaultURL;
           });
         // 페이지 이동
         document.getElementById("henan").addEventListener("click", function () {
