@@ -90,8 +90,7 @@ header div {
 
 @font-face {
   font-family: "locus_sangsang";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff")
-    format("woff");
+  src: url("../font/locus_sangsang.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
