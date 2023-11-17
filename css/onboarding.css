@@ -1,14 +1,22 @@
 main .inner .textbox {
+  box-sizing: border-box;
   width: 1171px;
   height: 886px;
   flex-shrink: 0;
 
   border-radius: 40px;
   border: 18px solid var(--black, #000);
-  background: var(--white-100, #FFF);
+  background: var(--white-100, #fff);
 
   margin: 0 auto;
   position: relative;
+  top: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
 }
 
 main .inner .text {
@@ -19,9 +27,4 @@ main .inner .text {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

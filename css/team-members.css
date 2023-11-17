@@ -1,3 +1,7 @@
+div {
+  box-sizing: border-box;
+}
+
 main {
   padding-top: 107px;
   padding-right: 126px;
@@ -23,7 +27,7 @@ main {
   height: 730px;
   width: 503px;
   gap: 40px;
-  padding: 0 0 0 45px;
+  padding: 0 45px 0 45px;
 }
 
 .main-tab .name-container {
@@ -66,7 +70,7 @@ main {
 
 .traits {
   width: 100%;
-  padding: 0 0 32px 32px;
+  padding-left: 32px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -100,7 +104,7 @@ main {
   gap: 9px;
 }
 
-.power-stat .logo {
+.power-stat img {
   margin: 0;
   width: 30px;
   height: 30px;
@@ -108,8 +112,7 @@ main {
 
 .comment {
   width: 95%;
-  padding: 0 32px;
-  font-size: 35px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
 }
@@ -124,7 +127,7 @@ main {
 .wdh-img,
 .yjs-img {
   position: absolute;
-  left: 192px; /*최대한 가운데로 보이는 px값...*/
+  left: 168px; /*최대한 가운데로 보이는 px값...*/
   top: -75px;
 }
 

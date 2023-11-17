@@ -1,0 +1,174 @@
+main .china-map {
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  position: relative;
+}
+
+main .china-shandong {
+  position: absolute;
+  z-index: 1;
+  margin-top: 799px;
+  margin-left: 1136px;
+  width: 230px;
+  height: 152px;
+}
+
+.region-pop div {
+  box-sizing: border-box;
+}
+.region-pop {
+  position: absolute;
+  z-index: 2;
+  top: 160px;
+  left: 100px;
+
+  width: 600px;
+  height: 750px;
+  border-radius: 35px;
+  border: 15px solid var(--main-purple, #c2b4d6);
+  background: var(--white-100, #fff);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+.region-pop::-webkit-scrollbar {
+  display: none;
+}
+
+.region-upper-tab {
+  height: 65px;
+  width: 100%;
+  padding: 15px 0 29px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+}
+.region-upper-tab .red,
+.yellow,
+.green {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 4.5px solid var(--main-purple);
+}
+.region-upper-tab .red {
+  background-color: var(--button-red);
+}
+.region-upper-tab .yellow {
+  background-color: var(--button-yellow);
+}
+.region-upper-tab .green {
+  background-color: var(--button-green);
+}
+.red:hover {
+  cursor: pointer;
+}
+
+.region-title {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: var(--main-purple);
+  padding: 14px 0 26px 75px;
+  color: var(--black-0, #000);
+  font-family: "GeekbleMalang2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 80% */
+}
+.region-title .chinese {
+  color: var(--black-0, #000);
+  font-family: "TaiwanPearl";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.found-monsters {
+  color: black;
+  font-family: "locus_sangsang";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.found-title {
+  height: 73px;
+  padding-top: 22px;
+  padding-left: 76px;
+  font-size: 35px;
+}
+
+.monster-category {
+  height: 56px;
+  width: 100%;
+  background-color: var(--purple1);
+  box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.1) inset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  padding-left: 105px;
+}
+.monster-category .circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: black;
+}
+.monster-type {
+  margin-left: 12px;
+  margin-top: 5px;
+  width: 300px;
+}
+.monster-number {
+  margin-right: 40px;
+}
+.arrow {
+  width: 14px;
+  height: 17px;
+  background-image: url(../img/details.svg);
+  background-size: cover;
+}
+.monster-list {
+  margin-left: 173px;
+}
+.item {
+  width: 427px;
+  height: 38px;
+  background: var(--purple2, #eae5f1);
+  box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.1) inset;
+  font-size: 25px;
+  padding-left: 22px;
+}
+
+.monster-category:hover,
+.item:hover {
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+.monster-list {
+  display: none;
+}
+#check-btn-1:checked ~ .first-list {
+  display: block;
+}
+#check-btn-2:checked ~ .second-list {
+  display: block;
+}
+#check-btn-3:checked ~ .third-list {
+  display: block;
+}
