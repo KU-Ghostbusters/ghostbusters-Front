@@ -76,8 +76,8 @@ header div {
 
 .logo {
   /* 로고 추가해야 됨 */
-  width: 52px;
-  height: 49px;
+  width: 50px;
+  height: 50px;
   background-color: var(--main-blue);
   border-radius: 50%;
 }
